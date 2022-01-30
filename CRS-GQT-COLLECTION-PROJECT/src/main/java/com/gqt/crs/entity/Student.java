@@ -10,7 +10,7 @@ public class Student {
 	private int student_id;
 	private String student_name;
 	private String student_email;
-	private int student_pwd;
+	private String student_pwd;
 	private String student_addr;
 	/**
 	 * @param student_id
@@ -19,7 +19,7 @@ public class Student {
 	 * @param student_pwd
 	 * @param student_addr
 	 */
-	public Student(int student_id, String student_name, String student_email, int student_pwd, String student_addr) {
+	public Student(int student_id, String student_name, String student_email, String student_pwd, String student_addr) {
 		super();
 		this.student_id = student_id;
 		this.student_name = student_name;
@@ -66,13 +66,13 @@ public class Student {
 	/**
 	 * @return the student_pwd
 	 */
-	public int getStudent_pwd() {
+	public String getStudent_pwd() {
 		return student_pwd;
 	}
 	/**
 	 * @param student_pwd the student_pwd to set
 	 */
-	public void setStudent_pwd(int student_pwd) {
+	public void setStudent_pwd(String student_pwd) {
 		this.student_pwd = student_pwd;
 	}
 	/**
@@ -87,5 +87,7 @@ public class Student {
 	public void setStudent_addr(String student_addr) {
 		this.student_addr = student_addr;
 	}
+	
+	}
 
-}
+
